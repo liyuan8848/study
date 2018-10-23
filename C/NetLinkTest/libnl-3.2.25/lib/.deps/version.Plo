@@ -1,0 +1,7 @@
+version.lo: version.c \
+ /home/yuali/tools/xlinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h \
+ ../include/netlink/version.h
+
+/home/yuali/tools/xlinx/SDK/2017.4/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include/stdc-predef.h:
+
+../include/netlink/version.h:
