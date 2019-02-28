@@ -96,22 +96,52 @@ class RPM_SocketObj:
            angle = self.bams_to_degree(pos)
         return angle           
     
+    def mode_command(self, angle):
+        self.set_degree(angle)
+
+    def parameter_request(self):
+        command = b'\x34'
+        self.socket.sendto(command,self.addr)
+        para_response_buffer_size = 17
+        data, ser_addr = self.socket.recvfrom(para_response_buffer_size)
+        if not data:
+            print("No data receive after Parameters request command")
+        else:
+            print("received after Parameters request command ", repr(data))
+            return data
+
+    def Ethernet_address_command(self):
+        command = b'\x3b'
+        self.socket.sendto(command,self.addr)
+        ethernet_response_buffer_size = 6
+        data, ser_addr = self.socket.recvfrom(ethernet_response_buffer_size)
+        if not data:
+            print("No data receive after Ethernet Address request command")
+        else:
+            print("received after Ethernet Address request command ", repr(data))
+            return data
+    
+    def parameter_command(self):
+        command = b'\x36'
+        
+        self.socket.sendto(command,self.addr)
+        para_command_response_buffer_size = 1
+        data, ser_addr = self.socket.recvfrom(para_command_response_buffer_size)
+        if not data:
+            print("No data receive after Ethernet Address request command")
+        else:
+            print("received after Ethernet Address request command ", repr(data))
+            return data
+
     
 
 
-az_addr = (az_host, az_port)
-el_addr = (el_host, el_port)
+    
 
 
-
-def parameter_command():
+def 
     pass
 
-def mode_command():
-    pass
-
-def Ethernet_address_command():
-    pass
 
 
 
