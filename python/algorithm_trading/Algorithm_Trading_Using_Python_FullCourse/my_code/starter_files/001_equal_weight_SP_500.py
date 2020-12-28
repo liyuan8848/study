@@ -66,6 +66,6 @@ except ValueError:
 
 position_size = float(portfolio_size) / len(final_dataframe.index)
 for i in range(0, len(final_dataframe['Ticker'])-1):
-    final_dataframe.loc[i,'Number Of Shares to Buy'] = math.floor(position_size / final_dataframe['Price'][i])
+    final_dataframe.loc[i,'Number of Shares to Buy'] = math.floor(position_size / final_dataframe['Price'][i])
 
 print(final_dataframe)
