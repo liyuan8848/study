@@ -75,23 +75,22 @@ def print_log_response(d, indent=0, tablen=0):
         if completion_code.cc_key in d:
             code = d.pop(completion_code.cc_key, None)              
             if tablen == 1:
-                print_response(d, 0, 1)
+                print_log_response(d, 0, 1)
             else:
-                print_response(d)               
+                print_log_response(d)               
             print_value (completion_code.cc_key, code, indent, tablen)
              
         else:
-            print(d.iteritems())
-            for k, v in sorted(d.iteritems(), key=lambda t: int(t[1]["Id"])):
+            for k, v in (d.iteritems()):
                 if hasattr(v, "keys"):
                     print_header (k, indent, tablen)
-                    print_response (v, indent + 1, tablen)
+                    print_log_response (v, indent + 1, tablen)
                 elif isinstance (v, list):
                     print_header (k, indent, tablen)
                     for i in v:
                         if (hasattr (i, "keys")):
                             print_value (None, "{", indent, tablen)
-                            print_response (i, indent + 1, tablen)
+                            print_log_response (i, indent + 1, tablen)
                             print_value (None, "}", indent, tablen)
                         else:
                             print_value (None, i, indent + 1, tablen)
