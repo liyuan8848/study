@@ -54,11 +54,19 @@ int main()
     int event_start = 0;
     char buffer[MAX_LEN];
     char lastrecord[128] = {0};
+    char search_pattern[6] = "=====";
+
+    
+  
     fp = fopen("ocsarchive_hpetextrest","r");
+    
     if (fp == NULL) {
       perror("Failed: ");
       return 1;
     }
+
+    strncpy(lastrecord, hpe_timestamps[0], strlen(hpe_timestamps[0]));
+
     // -1 to allow room for NULL terminator for really long string
     while (fgets(buffer, MAX_LEN - 1, fp))
     {
@@ -103,47 +111,60 @@ int main()
               // printf("current postion %d \n", cur_pos);
               strncpy(hpeEvtarr[idx].phyloc, buffer+cur_pos, phyloc_len);
               hpeEvtarr[idx].phyloc[phyloc_len] = '\0';
+
+              if(strncasecmp(hpe_timestamps[0], hpeEvtarr[idx].datetime, strlen(hpeEvtarr[idx].datetime)) < 0) {
+		            // log data
+                  printf("Log data  %s \n", hpeEvtarr[idx].datetime);
+                  if (strncasecmp(lastrecord, hpeEvtarr[idx].datetime, strlen(hpeEvtarr[idx].datetime)) < 0)
+                  {
+                    strncpy(lastrecord, hpeEvtarr[idx].datetime, strlen(hpeEvtarr[idx].datetime));
+                  }
+
+		          }
               idx++;
            }
 
-        }else if (buffer[0] == '=' && buffer[1]=='=')
+        // }else if (buffer[0] == '=' && buffer[1]=='=')
+        }else if (strstr(buffer, search_pattern)!=NULL)
         {
           event_start = 1;
         }
     }
+    strncpy(hpe_timestamps[0], lastrecord, strlen(lastrecord));
+    printf("hpe_timestamps is set to %s \n", hpe_timestamps[0]);
     
     fclose(fp);
 
     strncpy(lastrecord, hpe_timestamps[0], strlen(hpe_timestamps[0]));
 
-    for (int i = 0; i < idx; i++)
-      {
-        // printf("%s %s %s %s %s %s %s %s %s\n", hpeEvtarr[i].index, hpeEvtarr[i].datetime, hpeEvtarr[i].id,hpeEvtarr[i].category,
-        //  hpeEvtarr[i].part, hpeEvtarr[i].severity, hpeEvtarr[i].summary, hpeEvtarr[i].phyloc);
+    // for (int i = 0; i < idx; i++)
+    //   {
+    //     // printf("%s %s %s %s %s %s %s %s %s\n", hpeEvtarr[i].index, hpeEvtarr[i].datetime, hpeEvtarr[i].id,hpeEvtarr[i].category,
+    //     //  hpeEvtarr[i].part, hpeEvtarr[i].severity, hpeEvtarr[i].summary, hpeEvtarr[i].phyloc);
 
-        // printf("%s \n", hpeEvtarr[i].datetime);
-        // printf("size of hpeEvtarr[i].datetime is %d \n", strlen(hpeEvtarr[i].datetime));
+    //     // printf("%s \n", hpeEvtarr[i].datetime);
+    //     // printf("size of hpeEvtarr[i].datetime is %d \n", strlen(hpeEvtarr[i].datetime));
 
-        if(strncasecmp(hpe_timestamps[0], hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime)) < 0) {
-		      // log data
-          printf("Log data  %s \n", hpeEvtarr[i].datetime);
-          if (strncasecmp(lastrecord, hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime)) < 0)
-          {
-            strncpy(lastrecord, hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime));
-          }
+    //     if(strncasecmp(hpe_timestamps[0], hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime)) < 0) {
+		//       // log data
+    //       printf("Log data  %s \n", hpeEvtarr[i].datetime);
+    //       if (strncasecmp(lastrecord, hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime)) < 0)
+    //       {
+    //         strncpy(lastrecord, hpeEvtarr[i].datetime, strlen(hpeEvtarr[i].datetime));
+    //       }
 
-		   }
-        // char print_buf[128];
-        // // snprintf(print_buf,sizeof(print_buf), hpeEvtarr[i].datetime);
-        // snprintf(print_buf,sizeof(hpeEvtarr[i].datetime)+1, hpeEvtarr[i].datetime);
-        // printf("%d \n", sizeof(hpeEvtarr[i].index));
-        // printf("%s \n", hpeEvtarr[i].index);
-        // printf("%s \n", print_buf);
-        // printf("size of printbuf is %d \n", sizeof(print_buf));
-      }
+		//    }
+    //     // char print_buf[128];
+    //     // // snprintf(print_buf,sizeof(print_buf), hpeEvtarr[i].datetime);
+    //     // snprintf(print_buf,sizeof(hpeEvtarr[i].datetime)+1, hpeEvtarr[i].datetime);
+    //     // printf("%d \n", sizeof(hpeEvtarr[i].index));
+    //     // printf("%s \n", hpeEvtarr[i].index);
+    //     // printf("%s \n", print_buf);
+    //     // printf("size of printbuf is %d \n", sizeof(print_buf));
+    //   }
 
-        strncpy(hpe_timestamps[0], lastrecord, strlen(lastrecord));
-        printf("hpe_timestamps is set to %s \n", hpe_timestamps[0]);
+    //     strncpy(hpe_timestamps[0], lastrecord, strlen(lastrecord));
+    //     printf("hpe_timestamps is set to %s \n", hpe_timestamps[0]);
     return 0;
 
 
