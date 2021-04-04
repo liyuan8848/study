@@ -1,0 +1,1976 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 19 Mar 2021 05:27:05 GMT
+Server: S1-6-9
+
+
+Index Date       Time      Id   Category        Par# Severity Summary                                           Physical Location
+===== ========== ========= ==== =============== ==== ======== ================================================= ==============================
+936   2021-01-04 02:11:40Z 307  System Hardware   0  Fatal    Machine Check Abort (MCA) observed on the system                                          
+935   2021-01-04 02:11:36Z 569  Processor         0  Fatal    A core reported in as defective and was indicted  rack1/chassis_u3/cpu0/core13            
+934   2021-01-04 02:10:38Z 671  Unknown           0  Info     An error logging summary has been created                                                 
+933   2020-12-17 04:22:28Z 307  System Hardware   0  Fatal    Machine Check Abort (MCA) observed on the system                                          
+932   2020-12-17 04:22:23Z 569  Processor         0  Fatal    A core reported in as defective and was indicted  rack1/chassis_u3/cpu0/core13            
+931   2020-12-17 04:21:25Z 671  Unknown           0  Info     An error logging summary has been created                                                 
+930   2020-12-17 01:03:05Z 307  System Hardware   0  Fatal    Machine Check Abort (MCA) observed on the system                                          
+929   2020-12-17 01:03:00Z 569  Processor         0  Fatal    A core reported in as defective and was indicted  rack1/chassis_u3/cpu0/core24            
+928   2020-12-17 01:02:03Z 671  Unknown           0  Info     An error logging summary has been created                                                 
+927   2020-12-16 08:58:51Z 307  System Hardware   0  Fatal    Machine Check Abort (MCA) observed on the system                                          
+926   2020-12-16 08:58:46Z 569  Processor         0  Fatal    A core reported in as defective and was indicted  rack1/chassis_u3/cpu0/core13            
+925   2020-12-16 08:57:48Z 671  Unknown           0  Info     An error logging summary has been created                                                 
+924   2020-12-12 10:35:53Z 719  Memory            0  Critical DIMM SPD Checksum Errors                          rack1/chassis_u8/cpu0/dimmF1            
+923   2020-12-12 10:35:49Z 719  Memory            0  Critical DIMM SPD Checksum Errors                          rack1/chassis_u8/cpu0/dimmF0            
+922   2020-10-22 18:53:20Z 671  Unknown           0  Info     An error logging summary has been created                                                 
+921   2020-10-22 18:53:20Z 1261 Memory            0  Major    An OS recoverable event has occurred on the pr... rack1/chassis_u8/cpu2/core8             
+920   2020-10-22 18:53:19Z 307  System Hardware   0  Fatal    Machine Check Abort (MCA) observed on the system                                          
+919   2020-10-19 18:50:58Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+918   2020-09-09 17:24:52Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u3/psu0                   
+917   2020-09-09 17:24:48Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u3/psu1                   
+916   2020-09-09 17:24:22Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u3/psu2                   
+915   2020-09-09 17:24:18Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u3/psu3                   
+914   2020-09-04 18:43:27Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+913   2020-09-03 19:26:14Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+912   2020-09-03 18:56:27Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+911   2020-09-03 03:27:33Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+910   2020-09-02 13:02:41Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+909   2020-09-02 11:38:54Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+908   2020-09-02 05:19:29Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+907   2020-08-22 06:40:42Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+906   2020-08-22 05:09:10Z 665  System Inter...   0  Critical The Root Port init detected a PCI express link... rack1/chassis_u3/cpu0/pcie_slot2        
+905   2020-08-20 22:51:27Z 558  System Inter...   0  Fatal    Link Timeout to PCIe Device                       rack1/chassis_u3/cpu0/pcie_slot5        
+904   2020-08-20 20:16:40Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u18/psu0                  
+903   2020-08-20 20:16:10Z 1106 System Power      0  Major    BPS AC input has failed                           rack1/chassis_u18/psu0                  
+623   2020-05-07 19:33:18Z 305  System Power      -  Major    A power supply has failed                         rack1/rmc_u23/psu0                      
+597   2020-03-30 13:38:37Z 305  System Power      -  Major    A power supply has failed                         rack1/rmc_u23/psu0                      
+16    2020-03-26 15:28:04Z 305  System Power      -  Major    A power supply has failed                         rack1/rmc_u23/psu0                      
+15    2020-03-25 13:52:50Z 305  System Power      -  Major    A power supply has failed                         rack1/rmc_u23/psu0                      
+
+(...) indicates truncated text. For complete text see event details
+
+
+========== Details for events ==========
+
+Alert Number : 936
+
+Event Identification : 
+   Event ID                         : 307
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2021-01-04 02:11:40Z (Mon Jan  4 02:11:40 2021)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Machine Check Abort (MCA) observed on the system                                                           
+
+Full Description : 
+   There has been a Machine Check Abort (MCA) that has been detected on this system which needs manual
+   analysis.                                                                                                  
+
+Probable Cause 1 :
+   Hardware/Software component failure has occurred.                                                          
+
+Recommended Action 1 : 
+   Collect the MCA log and perform analysis manually.                                                         
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Hardware
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 11200000000003a 
+
+
+Alert Number : 935
+
+Event Identification : 
+   Event ID                         : 569
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2021-01-04 02:11:36Z (Mon Jan  4 02:11:36 2021)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   A core reported in as defective and was indicted                                                           
+
+Full Description : 
+   Indications from the core signify that the core may be defective.  Examples are a defective instruction
+   unit, data cache unit, a cache or transaction lookaside buffer. All of these can be isolated to a specific
+   core and it has been indicted.                                                                             
+
+Probable Cause 1 :
+   A core failed self test during boot and was disabled or deconfigured. Another possibility is that the logic
+   or cache in a core has failed.                                                                             
+
+Recommended Action 1 : 
+   Regardless of the cause, the action is the same.  Replace the socket associated with the core.             
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x000d000103010008 (rack1/chassis_u3/cpu0/core13)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : Processor
+   Event Subcategory                : Unknown
+   Probable Cause                   : Processor Problem (Internal Machine Error)
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Register Name                    : IA32_MC0_CTL
+   Register Value                   : 0x0000000000000fff
+   Register Name                    : IA32_MC0_STATUS
+   Register Value                   : 0xf200008000000005
+   Register Name                    : IA32_MC0_ADDR
+   Register Value                   : 0x0000000000000000
+   Register Name                    : IA32_MC0_MISC
+   Register Value                   : 0x0000000000000000
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 103000000000039 
+
+
+Alert Number : 934
+
+Event Identification : 
+   Event ID                         : 671
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2021-01-04 02:10:38Z (Mon Jan  4 02:10:38 2021)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An error logging summary has been created                                                                  
+
+Full Description : 
+   The error analysis engine has generated a supporting file to assist with support. The ID of this event can
+   be used by the SHOW UVDMP <ID> command. See the variable data portion of this event for the uvdmp ID.      
+
+Probable Cause 1 :
+   A problem has been detected and interpreted.                                                               
+
+Recommended Action 1 : 
+   Use the uvdmp ID from the variable section of this service event to request more information about the
+   failure from RMC CLI "show uvdmp <ID>" command.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Info
+   Alert Type                       : Device Alert
+   Event Category                   : Unknown
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   UVDMP_ID                         : 000000005FF2791E
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 933
+
+Event Identification : 
+   Event ID                         : 307
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 04:22:28Z (Thu Dec 17 04:22:28 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Machine Check Abort (MCA) observed on the system                                                           
+
+Full Description : 
+   There has been a Machine Check Abort (MCA) that has been detected on this system which needs manual
+   analysis.                                                                                                  
+
+Probable Cause 1 :
+   Hardware/Software component failure has occurred.                                                          
+
+Recommended Action 1 : 
+   Collect the MCA log and perform analysis manually.                                                         
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Hardware
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 108000000000035 
+
+
+Alert Number : 932
+
+Event Identification : 
+   Event ID                         : 569
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 04:22:23Z (Thu Dec 17 04:22:23 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   A core reported in as defective and was indicted                                                           
+
+Full Description : 
+   Indications from the core signify that the core may be defective.  Examples are a defective instruction
+   unit, data cache unit, a cache or transaction lookaside buffer. All of these can be isolated to a specific
+   core and it has been indicted.                                                                             
+
+Probable Cause 1 :
+   A core failed self test during boot and was disabled or deconfigured. Another possibility is that the logic
+   or cache in a core has failed.                                                                             
+
+Recommended Action 1 : 
+   Regardless of the cause, the action is the same.  Replace the socket associated with the core.             
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x000d000103010008 (rack1/chassis_u3/cpu0/core13)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : Processor
+   Event Subcategory                : Unknown
+   Probable Cause                   : Processor Problem (Internal Machine Error)
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Register Name                    : IA32_MC0_CTL
+   Register Value                   : 0x0000000000000fff
+   Register Name                    : IA32_MC0_STATUS
+   Register Value                   : 0xf200004000000005
+   Register Name                    : IA32_MC0_ADDR
+   Register Value                   : 0x0000000000000000
+   Register Name                    : IA32_MC0_MISC
+   Register Value                   : 0x0000000000000000
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 103000000000034 
+
+
+Alert Number : 931
+
+Event Identification : 
+   Event ID                         : 671
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 04:21:25Z (Thu Dec 17 04:21:25 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An error logging summary has been created                                                                  
+
+Full Description : 
+   The error analysis engine has generated a supporting file to assist with support. The ID of this event can
+   be used by the SHOW UVDMP <ID> command. See the variable data portion of this event for the uvdmp ID.      
+
+Probable Cause 1 :
+   A problem has been detected and interpreted.                                                               
+
+Recommended Action 1 : 
+   Use the uvdmp ID from the variable section of this service event to request more information about the
+   failure from RMC CLI "show uvdmp <ID>" command.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Info
+   Alert Type                       : Device Alert
+   Event Category                   : Unknown
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   UVDMP_ID                         : 000000005FDADCC5
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 930
+
+Event Identification : 
+   Event ID                         : 307
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 01:03:05Z (Thu Dec 17 01:03:05 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Machine Check Abort (MCA) observed on the system                                                           
+
+Full Description : 
+   There has been a Machine Check Abort (MCA) that has been detected on this system which needs manual
+   analysis.                                                                                                  
+
+Probable Cause 1 :
+   Hardware/Software component failure has occurred.                                                          
+
+Recommended Action 1 : 
+   Collect the MCA log and perform analysis manually.                                                         
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Hardware
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 10d000000000030 
+
+
+Alert Number : 929
+
+Event Identification : 
+   Event ID                         : 569
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 01:03:00Z (Thu Dec 17 01:03:00 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   A core reported in as defective and was indicted                                                           
+
+Full Description : 
+   Indications from the core signify that the core may be defective.  Examples are a defective instruction
+   unit, data cache unit, a cache or transaction lookaside buffer. All of these can be isolated to a specific
+   core and it has been indicted.                                                                             
+
+Probable Cause 1 :
+   A core failed self test during boot and was disabled or deconfigured. Another possibility is that the logic
+   or cache in a core has failed.                                                                             
+
+Recommended Action 1 : 
+   Regardless of the cause, the action is the same.  Replace the socket associated with the core.             
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0018000103010008 (rack1/chassis_u3/cpu0/core24)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : Processor
+   Event Subcategory                : Unknown
+   Probable Cause                   : Processor Problem (Internal Machine Error)
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Register Name                    : IA32_MC0_CTL
+   Register Value                   : 0x0000000000000fff
+   Register Name                    : IA32_MC0_STATUS
+   Register Value                   : 0xf200008000000005
+   Register Name                    : IA32_MC0_ADDR
+   Register Value                   : 0x0000000000000000
+   Register Name                    : IA32_MC0_MISC
+   Register Value                   : 0x0000000000000000
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 10300000000002f 
+
+
+Alert Number : 928
+
+Event Identification : 
+   Event ID                         : 671
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-17 01:02:03Z (Thu Dec 17 01:02:03 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An error logging summary has been created                                                                  
+
+Full Description : 
+   The error analysis engine has generated a supporting file to assist with support. The ID of this event can
+   be used by the SHOW UVDMP <ID> command. See the variable data portion of this event for the uvdmp ID.      
+
+Probable Cause 1 :
+   A problem has been detected and interpreted.                                                               
+
+Recommended Action 1 : 
+   Use the uvdmp ID from the variable section of this service event to request more information about the
+   failure from RMC CLI "show uvdmp <ID>" command.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Info
+   Alert Type                       : Device Alert
+   Event Category                   : Unknown
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   UVDMP_ID                         : 000000005FDAAE0B
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 927
+
+Event Identification : 
+   Event ID                         : 307
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-16 08:58:51Z (Wed Dec 16 08:58:51 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Machine Check Abort (MCA) observed on the system                                                           
+
+Full Description : 
+   There has been a Machine Check Abort (MCA) that has been detected on this system which needs manual
+   analysis.                                                                                                  
+
+Probable Cause 1 :
+   Hardware/Software component failure has occurred.                                                          
+
+Recommended Action 1 : 
+   Collect the MCA log and perform analysis manually.                                                         
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Hardware
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 10d00000000002b 
+
+
+Alert Number : 926
+
+Event Identification : 
+   Event ID                         : 569
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-16 08:58:46Z (Wed Dec 16 08:58:46 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   A core reported in as defective and was indicted                                                           
+
+Full Description : 
+   Indications from the core signify that the core may be defective.  Examples are a defective instruction
+   unit, data cache unit, a cache or transaction lookaside buffer. All of these can be isolated to a specific
+   core and it has been indicted.                                                                             
+
+Probable Cause 1 :
+   A core failed self test during boot and was disabled or deconfigured. Another possibility is that the logic
+   or cache in a core has failed.                                                                             
+
+Recommended Action 1 : 
+   Regardless of the cause, the action is the same.  Replace the socket associated with the core.             
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x000d000103010008 (rack1/chassis_u3/cpu0/core13)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : Processor
+   Event Subcategory                : Unknown
+   Probable Cause                   : Processor Problem (Internal Machine Error)
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Register Name                    : IA32_MC0_CTL
+   Register Value                   : 0x0000000000000fff
+   Register Name                    : IA32_MC0_STATUS
+   Register Value                   : 0xf200008000000005
+   Register Name                    : IA32_MC0_ADDR
+   Register Value                   : 0x0000000000000000
+   Register Name                    : IA32_MC0_MISC
+   Register Value                   : 0x0000000000000000
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 10300000000002a 
+
+
+Alert Number : 925
+
+Event Identification : 
+   Event ID                         : 671
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-16 08:57:48Z (Wed Dec 16 08:57:48 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An error logging summary has been created                                                                  
+
+Full Description : 
+   The error analysis engine has generated a supporting file to assist with support. The ID of this event can
+   be used by the SHOW UVDMP <ID> command. See the variable data portion of this event for the uvdmp ID.      
+
+Probable Cause 1 :
+   A problem has been detected and interpreted.                                                               
+
+Recommended Action 1 : 
+   Use the uvdmp ID from the variable section of this service event to request more information about the
+   failure from RMC CLI "show uvdmp <ID>" command.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Info
+   Alert Type                       : Device Alert
+   Event Category                   : Unknown
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   UVDMP_ID                         : 000000005FD9CC0C
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 924
+
+Event Identification : 
+   Event ID                         : 719
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-12 10:35:53Z (Sat Dec 12 10:35:53 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   DIMM SPD Checksum Errors                                                                                   
+
+Full Description : 
+   SPD Checksum errors have been detected on the DIMM. The data payload contains the Phys loc of the DIMM in
+   the payload. Given the nature of this error, the size data coming from SPD is not trustworthy.             
+
+Probable Cause 1 :
+   Checksum error on at least one block of SPD data read from the DIMM.                                       
+
+Recommended Action 1 : 
+   Replace DIMM                                                                                               
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01060108010074 (rack1/chassis_u8/cpu0/dimmF1)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : Memory
+   Event Subcategory                : Unknown
+   Probable Cause                   : Corrupt Data
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 923
+
+Event Identification : 
+   Event ID                         : 719
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-12-12 10:35:49Z (Sat Dec 12 10:35:49 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   DIMM SPD Checksum Errors                                                                                   
+
+Full Description : 
+   SPD Checksum errors have been detected on the DIMM. The data payload contains the Phys loc of the DIMM in
+   the payload. Given the nature of this error, the size data coming from SPD is not trustworthy.             
+
+Probable Cause 1 :
+   Checksum error on at least one block of SPD data read from the DIMM.                                       
+
+Recommended Action 1 : 
+   Replace DIMM                                                                                               
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff00060108010074 (rack1/chassis_u8/cpu0/dimmF0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : Memory
+   Event Subcategory                : Unknown
+   Probable Cause                   : Corrupt Data
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 922
+
+Event Identification : 
+   Event ID                         : 671
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-10-22 18:53:20Z (Thu Oct 22 18:53:20 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An error logging summary has been created                                                                  
+
+Full Description : 
+   The error analysis engine has generated a supporting file to assist with support. The ID of this event can
+   be used by the SHOW UVDMP <ID> command. See the variable data portion of this event for the uvdmp ID.      
+
+Probable Cause 1 :
+   A problem has been detected and interpreted.                                                               
+
+Recommended Action 1 : 
+   Use the uvdmp ID from the variable section of this service event to request more information about the
+   failure from RMC CLI "show uvdmp <ID>" command.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Info
+   Alert Type                       : Device Alert
+   Event Category                   : Unknown
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   UVDMP_ID                         : 000000005F91D520
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 921
+
+Event Identification : 
+   Event ID                         : 1261
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-10-22 18:53:20Z (Thu Oct 22 18:53:20 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   An OS recoverable event has occurred on the processor                                                      
+
+Full Description : 
+   A processor has experienced a recoverable event. The Operating System will attempt recovery by aborting the
+   process that saw the error.                                                                                
+
+Probable Cause 1 :
+   The recoverable machine check was caused by bad data consumed by the processor. The source of the bad data
+   cannot be determined by this information alone. An uncorrected memory error is non-fatal but can become
+   recoverable when consumed.  This is the most common cause of the error. The operating system will attempt
+   to recover.                                                                                                
+
+Recommended Action 1 : 
+   Please review the CMC logs for other sources of poison.  An uncorrected memory error is the most likely
+   source of the problem.                                                                                     
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0008020108010108 (rack1/chassis_u8/cpu2/core8)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : Memory
+   Event Subcategory                : Unknown
+   Probable Cause                   : Corrupt Data
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Register Name                    : IA32_MC1_CTL
+   Register Value                   : 0x000000000000000f
+   Register Name                    : IA32_MC1_STATUS
+   Register Value                   : 0xbd80000000100134
+   Register Name                    : IA32_MC1_ADDR
+   Register Value                   : 0x00000000f8000000
+   Register Name                    : IA32_MC1_MISC
+   Register Value                   : 0x0000000000000086
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 108000000000026 
+
+
+Alert Number : 920
+
+Event Identification : 
+   Event ID                         : 307
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-10-22 18:53:19Z (Thu Oct 22 18:53:19 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Machine Check Abort (MCA) observed on the system                                                           
+
+Full Description : 
+   There has been a Machine Check Abort (MCA) that has been detected on this system which needs manual
+   analysis.                                                                                                  
+
+Probable Cause 1 :
+   Hardware/Software component failure has occurred.                                                          
+
+Recommended Action 1 : 
+   Collect the MCA log and perform analysis manually.                                                         
+
+Replaceable Unit(s) : 
+   Part Location                    : Not Applicable
+   Additional Info                  : Not Applicable
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Hardware
+   Event Subcategory                : Unknown
+   Probable Cause                   : Unknown
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 108000000000025 
+
+
+Alert Number : 919
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-10-19 18:50:58Z (Mon Oct 19 18:50:58 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 918
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-09 17:24:52Z (Wed Sep  9 17:24:52 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01000103ffff44 (rack1/chassis_u3/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 917
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-09 17:24:48Z (Wed Sep  9 17:24:48 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01010103ffff44 (rack1/chassis_u3/psu1)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 916
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-09 17:24:22Z (Wed Sep  9 17:24:22 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01020103ffff44 (rack1/chassis_u3/psu2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 915
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-09 17:24:18Z (Wed Sep  9 17:24:18 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01030103ffff44 (rack1/chassis_u3/psu3)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 914
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-04 18:43:27Z (Fri Sep  4 18:43:27 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 913
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-03 19:26:14Z (Thu Sep  3 19:26:14 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 912
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-03 18:56:27Z (Thu Sep  3 18:56:27 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 911
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-03 03:27:33Z (Thu Sep  3 03:27:33 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 910
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-02 13:02:41Z (Wed Sep  2 13:02:41 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 909
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-02 11:38:54Z (Wed Sep  2 11:38:54 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 908
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-09-02 05:19:29Z (Wed Sep  2 05:19:29 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 907
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-08-22 06:40:42Z (Sat Aug 22 06:40:42 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 906
+
+Event Identification : 
+   Event ID                         : 665
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-08-22 05:09:10Z (Sat Aug 22 05:09:10 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   The Root Port init detected a PCI express link training failure                                            
+
+Full Description : 
+   The Root Port initialization detected a PCI express link training failure.                                 
+
+Probable Cause 1 :
+   The IO Device or Root Port hardware is not functioning properly.                                           
+
+Recommended Action 1 : 
+   A PCIe link may be part of a single FRU, or may be technology that connects through multiple FRU's.  The
+   FRU list is included as a reference.  Check for physical damage (bent pins, cracked traces, contamination
+   or corrosion) on the FRU connection points and ensure proper mating/seating occurs. If necessary, swap out
+   the device.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0002000103010005 (rack1/chassis_u3/cpu0/pcie_slot2)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Critical
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmission Error
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 905
+
+Event Identification : 
+   Event ID                         : 558
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-08-20 22:51:27Z (Thu Aug 20 22:51:27 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   Link Timeout to PCIe Device                                                                                
+
+Full Description : 
+   A timeout was detected waiting on a PCIe link transaction.                                                 
+
+Probable Cause 1 :
+   This is likely an operating system (OS) or driver issue. Software could cause this condition if drivers or
+   the OS do not handle the timing of accessing devices correctly during reset attempts or online add or
+   delete/replace operations.  Possibly the PCIe link hardware is not functioning properly.                   
+
+Recommended Action 1 : 
+   Verify the system firmware and drivers are at a supported revision. A PCIe link may be part of a single
+   FRU, or may be technology that connects through multiple FRUs.  The FRU list is included as a reference. 
+   Check for physical damage (bent pins, cracked traces, contamination or corrosion) on the FRU connection
+   points and ensure proper mating/seating occurs.                                                            
+
+Replaceable Unit(s) : 
+   Part Location                    : 0x0005000103010005 (rack1/chassis_u3/cpu0/pcie_slot5)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Fatal
+   Alert Type                       : Device Alert
+   Event Category                   : System Interconnect
+   Event Subcategory                : Unknown
+   Probable Cause                   : Transmit Failure
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   Suspected Fru 1                  : 0x0b0500010301008e (rack1/chassis_u3/cpu0/root_port11/io_slot5)
+   Suspected Fru 2                  : 0xffff010103ffff84 (rack1/chassis_u3/pcie_riser1)
+   Suspected Fru 3                  : 0x0000000103010007 (rack1/chassis_u3/cpu0)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : 0103000000000021 
+
+
+Alert Number : 904
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-08-20 20:16:40Z (Thu Aug 20 20:16:40 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01000112ffff44 (rack1/chassis_u18/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 903
+
+Event Identification : 
+   Event ID                         : 1106
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-08-20 20:16:10Z (Thu Aug 20 20:16:10 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Partition
+   Partition ID                     : 0
+
+Summary : 
+   BPS AC input has failed                                                                                    
+
+Full Description : 
+   A bulk power supply input has failed.                                                                      
+
+Probable Cause 1 :
+   A bulk power supply AC input has failed.  This can be due to a failure of the AC grid, a disconnected
+   supply or a failed PDU.                                                                                    
+
+Recommended Action 1 : 
+   Check that there is power from the AC grid. Check that the power supply is properly connected. Check for a
+   failed PDU.                                                                                                
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff01000112ffff44 (rack1/chassis_u18/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Problem
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 623
+
+Event Identification : 
+   Event ID                         : 305
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-05-07 19:33:18Z (Thu May  7 19:33:18 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Complex
+   Partition ID                     : Not Available
+
+Summary : 
+   A power supply has failed                                                                                  
+
+Full Description : 
+   One of the power supplies has failed.                                                                      
+
+Probable Cause 1 :
+   One of the power supplies has failed.                                                                      
+
+Recommended Action 1 : 
+   Check the power cable seating.  If the seating is secure, replace the power supply.                        
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff00000117ffff44 (rack1/rmc_u23/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Supply Failure
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   TrapDescription                  : UnderVoltageNonRecoverableLow
+   EventSeverity                    : 0x20
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 597
+
+Event Identification : 
+   Event ID                         : 305
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-03-30 13:38:37Z (Mon Mar 30 13:38:37 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Complex
+   Partition ID                     : Not Available
+
+Summary : 
+   A power supply has failed                                                                                  
+
+Full Description : 
+   One of the power supplies has failed.                                                                      
+
+Probable Cause 1 :
+   One of the power supplies has failed.                                                                      
+
+Recommended Action 1 : 
+   Check the power cable seating.  If the seating is secure, replace the power supply.                        
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff00000117ffff44 (rack1/rmc_u23/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Supply Failure
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   TrapDescription                  : UnderVoltageNonRecoverableLow
+   EventSeverity                    : 0x20
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 16
+
+Event Identification : 
+   Event ID                         : 305
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-03-26 15:28:04Z (Thu Mar 26 15:28:04 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Complex
+   Partition ID                     : Not Available
+
+Summary : 
+   A power supply has failed                                                                                  
+
+Full Description : 
+   One of the power supplies has failed.                                                                      
+
+Probable Cause 1 :
+   One of the power supplies has failed.                                                                      
+
+Recommended Action 1 : 
+   Check the power cable seating.  If the seating is secure, replace the power supply.                        
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff00000117ffff44 (rack1/rmc_u23/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Supply Failure
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   TrapDescription                  : UnderVoltageNonRecoverableLow
+   EventSeverity                    : 0x20
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
+Alert Number : 15
+
+Event Identification : 
+   Event ID                         : 305
+   Provider Name                    : Hawks2Provider
+   Event Time                       : 2020-03-25 13:52:50Z (Wed Mar 25 13:52:50 2020)
+Managed Entity : 
+   Name                             : buildroot
+   System Type                      : 59
+   Impacted Domain                  : Complex
+   Partition ID                     : Not Available
+
+Summary : 
+   A power supply has failed                                                                                  
+
+Full Description : 
+   One of the power supplies has failed.                                                                      
+
+Probable Cause 1 :
+   One of the power supplies has failed.                                                                      
+
+Recommended Action 1 : 
+   Check the power cable seating.  If the seating is secure, replace the power supply.                        
+
+Replaceable Unit(s) : 
+   Part Location                    : 0xff00000117ffff44 (rack1/rmc_u23/psu0)
+   Additional Info                  : Not Available
+
+Additional Data : 
+   Severity                         : Major
+   Alert Type                       : Device Alert
+   Event Category                   : System Power
+   Event Subcategory                : Unknown
+   Probable Cause                   : Power Supply Failure
+   Event Threshold                  : 1
+   Event Time Window                : 0 (minutes)
+   Actual Event Threshold           : 1
+   Actual Event Time Window         : 0 (minutes)
+   TrapDescription                  : UnderVoltageNonRecoverableLow
+   EventSeverity                    : 0x20
+
+Version Info : 
+   Complex FW Version               : Not Available
+   Provider Version                 : 1.38
+
+Error Log Data : 
+   Error Log Bundle                 : Not Available 
+
+
