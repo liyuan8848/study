@@ -14,6 +14,9 @@
 #define severity_len     8
 #define summary_len    49
 #define phyloc_len    30
+#define SYSTEM_HPE_CAE_TEXTLOG_URI	    "/redfish/v1/LogService/Oem/Cae"
+
+#define MAX_EVENT_DATA_LEN	1024*1024*2
 
 
 // definition of HPE Event event structure
@@ -45,7 +48,23 @@ static char hpe_timestamps[NUM_SYSTEMS][128] =
 	"0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z",
 	"0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z", "0000-01-01 00:00:00Z"
 };
-  
+
+int is_sku_support_redfish_seltext(char *uri)
+{
+	// switch(sku_type)
+	// {
+	// 	case SERVER_TYPE_HP16S:
+	// 		strcpy(*uri, SYSTEM_HPE_CAE_TEXTLOG_URI);
+	// 		break;
+	// 	default:
+	// 		return STATUS_FAILURE;
+	// }
+
+	// return STATUS_SUCCESS;
+  strcpy(uri, SYSTEM_HPE_CAE_TEXTLOG_URI);
+  return 0;
+}
+
 /* Driver function to test above function */
 int main() 
 { 
@@ -57,7 +76,22 @@ int main()
     char buffer[MAX_LEN];
     char lastrecord[128] = {0};
     char search_pattern[6] = "=====";
+    char pretext[] = "{\"redfish_seltext:\"";
+    char sel_texturl[MAX_LEN] = {0};
+    char jsonbuf[MAX_EVENT_DATA_LEN] = {0};
+    char test_start[128] = "Index Date       Time      Id   Category        Par# Severity Summary ";
 
+    printf("size of pretext is %d \n", sizeof(pretext));
+    printf("pretext is %s \n", pretext);
+
+    is_sku_support_redfish_seltext(sel_texturl);
+    printf("url is %s \n", sel_texturl);
+
+    int output_len = snprintf(jsonbuf, MAX_EVENT_DATA_LEN, "{\"redfish_seltextdata\":\"%s\"}", (char *)test_start);
+     
+     printf("size of jsonbuf is %d \n", sizeof(jsonbuf));
+     printf("jsonbuf is %s \n", jsonbuf);
+     
     struct stat st;
     char *buf;
     uint32_t i, len;
@@ -137,7 +171,7 @@ int main()
   if (buf != NULL)
 		free(buf);
 	fclose(fp);
-	fclose(fopen("ocsarchive_hpetextrest", "w"));
+	//fclose(fopen("ocsarchive_hpetextrest", "w"));
 
 
     // -1 to allow room for NULL terminator for really long string
