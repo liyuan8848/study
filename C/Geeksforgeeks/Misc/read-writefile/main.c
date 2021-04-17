@@ -61,7 +61,8 @@ int is_sku_support_redfish_seltext(char *uri)
 	// }
 
 	// return STATUS_SUCCESS;
-  strcpy(uri, SYSTEM_HPE_CAE_TEXTLOG_URI);
+  // strcpy(uri, SYSTEM_HPE_CAE_TEXTLOG_URI);
+  strncpy(uri, SYSTEM_HPE_CAE_TEXTLOG_URI, sizeof(SYSTEM_HPE_CAE_TEXTLOG_URI));
   return 0;
 }
 
@@ -98,6 +99,8 @@ int main()
     char *content_start;
 
     FILE *outstream;
+    char *pattern = "Index";
+    printf("size of pattern is %d \n", sizeof(pattern));
 
 
     
