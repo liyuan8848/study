@@ -61,7 +61,7 @@ hist = msft.history(period="max")
 # print(msft.options)
 
 # get option chain for specific expiration 
-opt = msft.option_chain('YYY-MM-DD')
+#opt = msft.option_chain('YYY-MM-DD')
 #data available via : opt.calls, opt.puts
 
 #####
@@ -99,7 +99,7 @@ data = yf.download(  # or pdr.get_data_yahoo(...
         # fetch data by interval (including intraday if period < 60 days)
         # valid intervals: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
         # (optional, default is '1d')
-        interval = "1m",
+        interval = "1d",
 
         # group by ticker (to access via data['SPY'])
         # (optional, default is 'column')
@@ -129,13 +129,10 @@ data = yf.download(  # or pdr.get_data_yahoo(...
 
 #####
 
-from pandas_datareader import data as pdr
-
 import yfinance as yf
 yf.pdr_override() # <== that's all it takes :-)
 
 # download dataframe
-data = pdr.get_data_yahoo("SPY", start="2017-01-01", end="2017-04-30")
-
-
+data = yf.download("SPY", start="2017-01-01", end="2017-04-30")
+print(data)
 
